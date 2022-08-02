@@ -21,7 +21,7 @@
             const m = v().View.extend({
                     tagName: "div",
                     className: "list",
-                    template: n().template('<ul class="nav nav-colors"> <li class="pull-left button-pad"> <div class="undoButton"> <button id="undoButton" class="undo button block">Undo</button> </div> </li> <li class="pull-right button-pad"> <div id="colorPaletteList" class="colorPaletteListRegion pull-right"> </div> </li> </ul> '),
+                    template: n().template('<ul class="nav nav-colors"> <li class="pull-left button-pad"> <div class="undoButton"> <button id="undoButton" class="undo button block">Annuler</button> </div> </li> <li class="pull-right button-pad"> <div id="colorPaletteList" class="colorPaletteListRegion pull-right"> </div> </li> </ul> '),
                     model: new(l().Model)({}),
                     regions: {
                         colorPaletteList: "#colorPaletteList"
@@ -62,7 +62,7 @@
                         c.d.prototype.update.apply(this), !this.cardShown && this.model.get("popup") && (this.cardShown = !0, this.infoClick())
                     },
                     sendInput(t) {
-                        0 !== this.sketchpadComponent.getLines().length ? c.d.prototype.sendInput.apply(this, [t]) : h.b.show(Error("You have to draw something!"))
+                        0 !== this.sketchpadComponent.getLines().length ? c.d.prototype.sendInput.apply(this, [t]) : h.b.show(Error("Vous devez dessiner quelque chose !"))
                     },
                     infoClick() {
                         d().fire({
@@ -89,23 +89,23 @@
             const C = g.S.extend({
                     defaults: n().extend({}, f.W.prototype.model.defaults, {
                         strings: {
-                            wait: "<div>PLEASE STAND BY!</div><div>The seminar will start shortly!</div>",
-                            vip_waiting: "<div>You're the VIP!</div><div>Waiting for all attendees to take a seat!<div>",
-                            vip_canStart: "<div>You're the VIP!</div><div>Press this button when all attendees are ready</div>",
-                            vip_cancel: "<div>You're the VIP!</div><div>press this button to cancel the seminar</div>",
-                            vip_postgame: "<div>You're the VIP!</div><div>Want to attend another seminar?<div>",
-                            vip_episodes_menu: "Episodes Menu",
-                            vip_episodes_unload: "Unload Episode",
-                            vip_episodes_report: "Report Episode",
-                            vip_episodes_view_author: "View Author",
-                            button_start: "Everybody's In",
-                            button_cancel: "Cancel",
-                            button_changename: "Change Name",
-                            button_sameplayers: "Same Players",
-                            button_newplayers: "New Players",
-                            prompt_entername: "Enter your name",
+                            wait: "<div>VEUILLEZ PATIENTER !</div><div>Le séminaire va bientôt commencer</div>",
+                            vip_waiting: "<div>Vous êtes le VIP!</div><div>En attente de tous les participants pour commencer !<div>",
+                            vip_canStart: "<div>Vous êtes le VIP!</div><div>Appuyez sur ce bouton quand tous les participants sont prêts</div>",
+                            vip_cancel: "<div>Vous êtes le VIP!</div><div>Appuyez sur ce bouton pour annuler le séminaire</div>",
+                            vip_postgame: "<div>Vous êtes le VIP!</div><div>Voulez-vous organiser un autre séminaire?<div>",
+                            vip_episodes_menu: "Menu des épisodes",
+                            vip_episodes_unload: "Enlever l'épisode",
+                            vip_episodes_report: "Signaler l'épisode",
+                            vip_episodes_view_author: "Voir l'auteur",
+                            button_start: "Tout le monde est là !",
+                            button_cancel: "Annuler",
+                            button_changename: "Changer de nom",
+                            button_sameplayers: "Mêmes joueurs",
+                            button_newplayers: "Nouveaux joueurs",
+                            prompt_entername: "Entrez votre nom",
                             prompt_choosecharacter: "",
-                            button_censorOptions: "Censor Options"
+                            button_censorOptions: "Options de censure"
                         }
                     })
                 }),

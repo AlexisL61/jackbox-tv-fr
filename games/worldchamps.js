@@ -109,12 +109,12 @@
                             tipTaperFactor: 1
                         },
                         strings: s().extend({}, m.d.prototype.model.defaults.strings, {
-                            name_modal_text: "Name your champion:",
+                            name_modal_text: "Nommez votre champion:",
                             name_modal_confirm: "OK",
-                            name_modal_cancel: "Cancel",
-                            name_error_empty: "You need to write something!",
-                            ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!",
-                            ERROR_REJECTED_TEXT: "That's not allowed, enter something else!"
+                            name_modal_cancel: "Annuler",
+                            name_error_empty: "Vous devez écrire quelque chose !",
+                            ERROR_REJECTED_OBJECT: "Ce n'est pas autorisé, entrez autre chose !",
+                            ERROR_REJECTED_TEXT: "Ce n'est pas autorisé, entrez autre chose !"
                         })
                     })
                 }),
@@ -267,7 +267,7 @@
                                 popup: "worldchamps nameView"
                             },
                             text: this.model.get("strings").name_modal_text,
-                            cancelButtonText: this.model.get("strings").name_modal_cancel || "Cancel",
+                            cancelButtonText: this.model.get("strings").name_modal_cancel || "Annuler",
                             confirmButtonText: this.model.get("strings").name_modal_confirm || "OK",
                             input: "text",
                             allowOutsideClick: !1,
@@ -335,7 +335,7 @@
                         doneText: {},
                         announcePrompt: !1,
                         strings: {
-                            survey_finished: "Thank you for your input. You did your civic duty!"
+                            survey_finished: "Merci pour votre réponse. Vous avez fait votre devoir civique !"
                         }
                     }
                 }),

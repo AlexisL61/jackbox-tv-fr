@@ -478,7 +478,7 @@
                     SUBMIT_JOIN_AUDIENCE: "REJOINDRE EN TANT QUE SPECTATEUR",
                     SUBMIT_RECONNECT: "SE RECONNECTER",
                     SUBMIT_TWITCH_LOGIN: "SE CONNECTER AVEC TWITCH",
-                    TOS_WARNING: "En cliquant sur {submit}, vous acceptez nos [tos]Conditions de service[/tos].",
+                    TOS_WARNING: "En cliquant sur {submit}, vous acceptez les [tos]Conditions de service de Jackbox[/tos].",
                     LANGUAGE_NAME: "Français",
                     SUPPORTED_LANGUAGES: ["English", "Français", "Italiano", "Deutsche", "Español"],
                     SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
