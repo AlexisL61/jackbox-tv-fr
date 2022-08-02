@@ -817,7 +817,7 @@
                 }),
                 W = m().View.extend({
                     className: "response active",
-                    template: l().template('<p class="empty glitchable glitch-text glitch-element">AUCUNES REPONSES À VOIR</p>')
+                    template: l().template('<p class="empty glitchable glitch-text glitch-element">AUCUNE REPONSE À VOIR</p>')
                 }),
                 F = m().CollectionView.extend({
                     tagName: "div",
