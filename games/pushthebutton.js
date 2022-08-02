@@ -31,7 +31,7 @@
                 m = s.n(g);
             const v = m().View.extend({
                 tagName: "div",
-                template: l().template('<div class="pressed-overlay"> <p class="pressed-message"></p> <div class="pressed-meter"> <div class="pressed-meter-background"></div> <div class="pressed-meter-foreground"></div> </div> </div> <div class="the-button"> <button class="the-button-circle circle glitchable glitch-button">THE<br/>BUTTON</button> </div> <div class="hurry-button"> <button class="hurry-button-circle circle glitchable glitch-hurry">HURRY!</button> </div>'),
+                template: l().template('<div class="pressed-overlay"> <p class="pressed-message"></p> <div class="pressed-meter"> <div class="pressed-meter-background"></div> <div class="pressed-meter-foreground"></div> </div> </div> <div class="the-button"> <button class="the-button-circle circle glitchable glitch-button">LE<br/>BOUTON</button> </div> <div class="hurry-button"> <button class="hurry-button-circle circle glitchable glitch-hurry">VITE !</button> </div>'),
                 interval: null,
                 intervalCount: 0,
                 bindings: {
@@ -101,10 +101,10 @@
                     })
                 },
                 startInterval() {
-                    this.intervalCount = 0, this.model.set("message", "HOLD TO ACCUSE"), this.model.set("shake", "none"), this.interval = setInterval(this.onInterval.bind(this), 1e3)
+                    this.intervalCount = 0, this.model.set("message", "RESTEZ APPUYE POUR ACCUSER"), this.model.set("shake", "none"), this.interval = setInterval(this.onInterval.bind(this), 1e3)
                 },
                 onInterval() {
-                    return this.intervalCount += 1, 1 === this.intervalCount ? (this.model.set("message", "ARE YOU SURE?"), void this.model.set("shake", "light")) : 2 === this.intervalCount ? (this.model.set("message", "THIS IS SERIOUS!"), void this.model.set("shake", "heavy")) : (this.triggerMethod("client:message", {
+                    return this.intervalCount += 1, 1 === this.intervalCount ? (this.model.set("message", "VOUS ÊTES-SUR ??"), void this.model.set("shake", "light")) : 2 === this.intervalCount ? (this.model.set("message", "C'EST TRES SERIEUX !!!"), void this.model.set("shake", "heavy")) : (this.triggerMethod("client:message", {
                         action: "pushthebutton"
                     }), void this.killInterval())
                 },
@@ -159,10 +159,10 @@
                         u.E.prototype.onRender.apply(this), "ConfirmedIdentity" === this.model.get("choiceId") && null === this.model.get("chosen") && this.createConfirmDelay()
                     },
                     createConfirmDelay() {
-                        this.model.get("choices")[0].html = "CONFIRM IN 5", this.model.get("choices")[0].disabled = !0;
+                        this.model.get("choices")[0].html = "CONFIRMATION DANS 5", this.model.get("choices")[0].disabled = !0;
                         let e = 4,
                             t = window.setInterval((() => {
-                                e ? this.model.get("choices")[0].html = `CONFIRM IN ${e}` : (this.model.get("choices")[0].html = "CONFIRM", this.model.get("choices")[0].disabled = !1, window.clearInterval(t), t = void 0), e -= 1, this.update()
+                                e ? this.model.get("choices")[0].html = `CONFIRMATION DANS ${e}` : (this.model.get("choices")[0].html = "CONFIRMER", this.model.get("choices")[0].disabled = !1, window.clearInterval(t), t = void 0), e -= 1, this.update()
                             }), 1e3)
                     }
                 });
@@ -409,7 +409,7 @@
                 }),
                 O = m().View.extend({
                     className: "Report scrollable",
-                    template: l().template('<div id="controller" class="state-controller controller-content"> <div class="modal"> <div class="container"> <svg class="in" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 90" preserveAspectRatio="xMaxYMid"> <polygon class="inner-0" points="113.7,56 99.8,56 92.8,68 99.8,80.1 113.7,80.1 120.7,68"/> <polygon class="outer-0" points="118.4,47.8 95.1,47.8 83.4,68 95.1,88.2 118.4,88.2 130.1,68"/> <polygon class="inner-1" points="113.7,8.1 99.8,8.1 92.8,20.2 99.8,32.2 113.7,32.2 120.7,20.2"/> <polygon class="outer-1" points="118.4,0 95.1,0 83.4,20.2 95.1,40.4 118.4,40.4 130.1,20.2"/> <polygon class="inner-2" points="73.1,32.1 59.2,32.1 52.3,44.1 59.2,56.2 73.1,56.2 80.1,44.1"/> <polygon class="outer-2" points="77.8,23.9 54.5,23.9 42.8,44.1 54.5,64.3 77.8,64.3 89.5,44.1"/> <polygon class="inner-3" points="34.4,57.8 20.5,57.8 13.5,69.8 20.5,81.9 34.4,81.9 41.3,69.8"/> <polygon class="outer-3" points="39.1,49.6 15.8,49.6 4.1,69.8 15.8,90 39.1,90 50.7,69.8"/> </svg> <p class="title in">Bioscan Report</p> <p class="prompt in">It is up to you to decide what to do with this information.</p> <p class="result in"> <span class="username"></span> is <span class="role"></span> </p> <p class="help in">NOTICE: Aliens may want to consider lying.</p> </div> </div> </div>'),
+                    template: l().template('<div id="controller" class="state-controller controller-content"> <div class="modal"> <div class="container"> <svg class="in" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 90" preserveAspectRatio="xMaxYMid"> <polygon class="inner-0" points="113.7,56 99.8,56 92.8,68 99.8,80.1 113.7,80.1 120.7,68"/> <polygon class="outer-0" points="118.4,47.8 95.1,47.8 83.4,68 95.1,88.2 118.4,88.2 130.1,68"/> <polygon class="inner-1" points="113.7,8.1 99.8,8.1 92.8,20.2 99.8,32.2 113.7,32.2 120.7,20.2"/> <polygon class="outer-1" points="118.4,0 95.1,0 83.4,20.2 95.1,40.4 118.4,40.4 130.1,20.2"/> <polygon class="inner-2" points="73.1,32.1 59.2,32.1 52.3,44.1 59.2,56.2 73.1,56.2 80.1,44.1"/> <polygon class="outer-2" points="77.8,23.9 54.5,23.9 42.8,44.1 54.5,64.3 77.8,64.3 89.5,44.1"/> <polygon class="inner-3" points="34.4,57.8 20.5,57.8 13.5,69.8 20.5,81.9 34.4,81.9 41.3,69.8"/> <polygon class="outer-3" points="39.1,49.6 15.8,49.6 4.1,69.8 15.8,90 39.1,90 50.7,69.8"/> </svg> <p class="title in">Rapport de scan</p> <p class="prompt in">C\'est à vous de décider de ce que vous voulez faire avec cette information.</p> <p class="result in"> <span class="username"></span> est <span class="role"></span> </p> <p class="help in">NOTE: Les aliens devraient mentir.</p> </div> </div> </div>'),
                     model: new I.S,
                     bindings: {
                         ".username": {
@@ -687,7 +687,7 @@
                     idAttribute: "username",
                     responsesText() {
                         const e = this.get("responses");
-                        return e ? 1 === e.length ? "Tested 1 time" : `Tested ${e.length} times` : ""
+                        return e ? 1 === e.length ? "Testé 1 fois" : `Testé ${e.length} fois` : ""
                     },
                     captainTimeText() {
                         const e = this.get("durationAsCaptain");
@@ -704,7 +704,7 @@
                         return e ? e.username : null
                     },
                     hackMessage() {
-                        return this.isHacked() ? this.hackedBy() === this.get("playerName") ? "Hacked By YOU" : `Hacked by ${this.hackedBy()}` : null
+                        return this.isHacked() ? this.hackedBy() === this.get("playerName") ? "Hacké par VOUS" : `Hacké par ${this.hackedBy()}` : null
                     },
                     hackState() {
                         return void 0 === this.get("canTrap") || null === this.get("canTrap") ? "decoy" : this.isHacked() && this.hackedBy() ? this.hackedBy() === this.get("playerName") ? "unhack" : "hacked" : this.get("canTrap") ? "hack" : "disabled"
@@ -712,9 +712,9 @@
                     hackLabel() {
                         switch (this.hackState()) {
                             case "unhack":
-                                return "UNHACK";
+                                return "DESACTIVER";
                             case "hacked":
-                                return "HACKED";
+                                return "PIRATER";
                             case "decoy":
                                 return "";
                             default:
@@ -817,7 +817,7 @@
                 }),
                 W = m().View.extend({
                     className: "response active",
-                    template: l().template('<p class="empty glitchable glitch-text glitch-element">NO RESPONSES TO INVESTIGATE</p>')
+                    template: l().template('<p class="empty glitchable glitch-text glitch-element">AUCUNES REPONSES À VOIR</p>')
                 }),
                 F = m().CollectionView.extend({
                     tagName: "div",
