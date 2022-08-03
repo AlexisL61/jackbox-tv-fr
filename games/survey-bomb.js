@@ -765,8 +765,8 @@
             const h = d.exports,
                 p = {
                     en: {
-                        SUBMIT_CHOOSE_ONE: "Choose a door",
-                        SUBMIT_CHOOSE_THIS: "Choose this door"
+                        SUBMIT_CHOOSE_ONE: "Choisissez une porte",
+                        SUBMIT_CHOOSE_THIS: "Choisissez cette porte",
                     },
                     fr: {},
                     it: {},
@@ -1090,8 +1090,8 @@
             C._withStripped = !0;
             const E = {
                     en: {
-                        INSTRUCTION_REVIEW: "Remember your choices",
-                        SUBMIT_PICK_MORE: "Pick {amount} more"
+                        INSTRUCTION_REVIEW: "Retenez vos choix",
+                        SUBMIT_PICK_MORE: "Encore {amount}"
                     },
                     fr: {},
                     it: {},
@@ -1254,17 +1254,17 @@
                 i18n: {
                     messages: {
                         en: {
-                            FILTER_ERROR: "That's not allowed, enter something else!",
-                            INSTRUCTION_AVATAR: "Pick your avatar",
-                            INSTRUCTION_NAME_TEAM: "Suggest a team name",
-                            INSTRUCTION_RANK_TEAM: "Rank your favorite team names",
-                            STREAMER_MODAL_CONFIRM: "Yeah, yeah, I got it",
-                            STREAMER_MODAL_SUBTEXT_ATTENTION: "[b]YOU MUST HAVE THE AUDIENCE ON TO PLAY![/b]",
-                            STREAMER_MODAL_SUBTEXT_BEST: "[b]BEST:[/b] Passwording the game and sharing the password with your desired team",
-                            STREAMER_MODAL_SUBTEXT_GOOD: "[b]ALMOST AS GOOD:[/b] Hiding the room code and setting a max player limit",
-                            STREAMER_MODAL_SUBTEXT_RECOMMEND: "We recommend the following settings to help create your desired team and audience.",
-                            STREAMER_MODAL_SUBTEXT_RESTART: "So, if you haven't done that, maybe restart the game?",
-                            STREAMER_MODAL_TEXT: "Welcome to Streamer Mode!"
+                            FILTER_ERROR: "Ce n'est pas autorisé, entrez autre chose !",
+                            INSTRUCTION_AVATAR: "Choisissez votre avatar",
+                            INSTRUCTION_NAME_TEAM: "Suggérez un nom d'équipe",
+                            INSTRUCTION_RANK_TEAM: "Classez vos noms d'équipes préférés",
+                            STREAMER_MODAL_CONFIRM: "Ouais, ouais, j'ai compris",
+                            STREAMER_MODAL_SUBTEXT_ATTENTION: "[b]VOUS DEVEZ ACTIVER L'AUDIENCE POUR JOUER![/b]",
+                            STREAMER_MODAL_SUBTEXT_BEST: "[b]LE TOP :[/b] Ajoutez un mot de passe à votre partie et partagez le à votre équipe",
+                            STREAMER_MODAL_SUBTEXT_GOOD: "[b]PRESQUE AU TOP :[/b] Cacher le code du salon et ajouter un maximum de participants",
+                            STREAMER_MODAL_SUBTEXT_RECOMMEND: "Nous recommandons les paramètres suivants pour votre partie.",
+                            STREAMER_MODAL_SUBTEXT_RESTART: "Donc, si vous n'avez pas fait ça, peut-être devriez-vous redémarrer votre partie ?",
+                            STREAMER_MODAL_TEXT: "Bienvenue en mode streamer !"
                         },
                         fr: {},
                         it: {},
@@ -1721,16 +1721,16 @@
                 i18n: {
                     messages: {
                         en: {
-                            FINAL_CHANCE_BOTH: "If either team gets the next choice right, the game is over!",
-                            FINAL_CHANCE_CURRENT: "If their team gets their next choice right, the game is over!",
-                            FINAL_CHANCE_HEADER: "Elimination Moment",
-                            FINAL_CHANCE_RIVAL: "If your team gets your next choice right, the game is over!",
+                            FINAL_CHANCE_BOTH: "Si une des deux équipes a une bonne réponse, la partie est terminée !",
+                            FINAL_CHANCE_CURRENT: "Si la prochaine réponse de leur équipe est correcte, la partie est terminée !",
+                            FINAL_CHANCE_HEADER: "Tour d'élimination",
+                            FINAL_CHANCE_RIVAL: "Si votre équipe a une réponse correcte, la partie est terminée !",
                             LOSE_HEADER: "You’re Trapped",
                             LOSE_TEXT: ["Don’t worry, apparently you were tasty.", "At least the other team is happy.", "Learn more about your friends next time.", "Still, you learned a lot about each other.", "It is pitch black. You are likely to be eaten by a grue.", "Even worse, you’re damp.", "Theivery doesn’t pay!", "It’s okay, Laverne will keep you company.", "Enjoy the musty air.", "At least your team name was cool."],
-                            SKIP_TUTORIALS: "Skip Tutorials",
-                            UP_NEXT_HEADER: "You’re Up Next",
+                            SKIP_TUTORIALS: "Passer les tutoriels",
+                            UP_NEXT_HEADER: "Vous jouez juste après",
                             UP_NEXT_TEXT: ["Get ready! You’re choosing next.", "Pay attention because you’re picking the next door.", "After this choice, it’s your turn… so hope they fail!"],
-                            WIN_HEADER: "You Escaped",
+                            WIN_HEADER: "Vous vous êtes échappés",
                             WIN_TEXT: ["Congratulations on a job well done!", "Teamwork made this dream work.", "Don’t spend all that gold you stole earlier in one place.", "Enjoy the fresh air.", "Don’t forget to rate your stay!", "I’m sure the other team is just fine.", "You picked your friends’ knows!", "Looking forward to your next visit.", "The real treasure was the friends we lost to the depths of this mine.", "Everyone is proud of you."],
                             VERSUS: "VS"
                         },
